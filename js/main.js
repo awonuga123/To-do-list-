@@ -90,7 +90,7 @@ function addTask(event) {
 
 // Change Complete State
 function completeTask(id) {
-  // Get Task
+  // Get Tasks
   const taskIndex = list.findIndex(t => t.id == id)
   const task = list[taskIndex]
 
@@ -193,7 +193,7 @@ function showRemoveModal(id) {
   $("#remove-modal.modal").modal("show")
 }
 
-// Show Clear All Tasks Modal
+// Show Clear All Tasks Modal 
 function showClearAllTasksModal() {
   if (list.length > 0) {
     return $("#clear-all-tasks-modal.modal").modal("show")
